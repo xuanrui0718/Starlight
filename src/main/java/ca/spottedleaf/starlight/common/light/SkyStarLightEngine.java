@@ -296,7 +296,7 @@ public final class SkyStarLightEngine extends StarLightEngine {
 
     @Override
     protected int calculateLightValue(final LightChunkGetter lightAccess, final int worldX, final int worldY, final int worldZ,
-                                      final int expect) {
+                                      final int expect, final VariableBlockLightHandler customBlockLight) {
         if (expect == 15) {
             return expect;
         }
